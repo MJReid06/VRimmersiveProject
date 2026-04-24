@@ -20,7 +20,7 @@ public class ObjectiveManager : MonoBehaviour
     private void Start()
     {
         UpdateUI();
-        winText.gameObject.SetActive(false); // hide win text at start
+        winText.gameObject.SetActive(false); 
     }
 
     public void CompleteObjective()

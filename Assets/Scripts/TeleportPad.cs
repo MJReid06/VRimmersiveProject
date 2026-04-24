@@ -27,7 +27,7 @@ public class TeleportPad : MonoBehaviour
         TeleportPad destinationPad = destination.GetComponent<TeleportPad>();
         if (destinationPad != null) destinationPad.DisablePad(cooldown);
 
-        // Works for both FPS and VR
+        
         Transform root = player.transform.root;
         root.position = destination.position;
 

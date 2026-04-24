@@ -26,7 +26,7 @@ public class FinishPoint : MonoBehaviour
 
     private IEnumerator FinishGame()
     {
-        // Fade to black
+        
         float t = 0f;
         Color c = blackScreen.color;
         c.a = 0f;
@@ -41,7 +41,7 @@ public class FinishPoint : MonoBehaviour
             yield return null;
         }
 
-        // Show congrats text
+       
         congratsText.gameObject.SetActive(true);
         congratsText.text = "Congratulations!\nYou escaped the island!";
     }

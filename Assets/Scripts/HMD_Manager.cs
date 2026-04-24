@@ -18,10 +18,10 @@ public class HMD_Manager : MonoBehaviour
 
     private IEnumerator DetectHMD()
     {
-        // Wait for XR Manager to initialise
+        
         yield return new WaitForSeconds(2f);
 
-        // Check using new XR Management API
+        
         var xrManager = XRGeneralSettings.Instance?.Manager;
 
         if (xrManager != null && xrManager.isInitializationComplete)
